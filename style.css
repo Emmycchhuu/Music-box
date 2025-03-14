@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1518607692850-b8fefc23d7d1?ixlib=rb-1.2.1');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    min-height: 100vh;
+}
+.platform-filter {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.platform-btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.platform-btn.active {
+    background: #ff4757;
+    transform: scale(1.1);
+}
+
+.music-card.youtube { border-left: 4px solid #FF0000; }
+.music-card.audiomack { border-left: 4px solid #FF5500; }
+.music-card.soundcloud { border-left: 4px solid #FF8800; }
